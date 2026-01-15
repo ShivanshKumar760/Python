@@ -27,6 +27,3 @@ def calculate_pi(n):def calculate_pi(n):
     C = 426880 * Decimal(10005).sqrt()    C = 426880 * Decimal(10005).sqrt()
     K = 6    K = 6
     M = 1    M = 1
-    X = 1    X = 1
-    L = 13591409    L = 13591409
-    S = L    S = L
