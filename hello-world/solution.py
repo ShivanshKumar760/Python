@@ -6,4 +6,4 @@ Language: python
 Solution by NeetCode GitHub Pusher
 """
 
-print("Hello, world!")print("Hello, world!")
+print("Hello, world!")
