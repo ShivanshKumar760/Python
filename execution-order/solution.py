@@ -6,6 +6,6 @@ Language: python
 Solution by NeetCode GitHub Pusher
 """
 
-print("Fourth")print("Fourth")
-print("Fifth")print("Fifth")
-print("Sixth")print("Sixth")
+print("Fourth")
+print("Fifth")
+print("Sixth")
