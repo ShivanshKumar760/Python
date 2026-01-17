@@ -11,7 +11,7 @@ a, b, c = 2, 2, 0.5a, b, c = 2, 2, 0.5
 addition=a+b+caddition=a+b+c
 print(addition)print(addition)
 
-subtract0=addition-0subtract0=addition-0
+subtract0=0-additionsubtract0=0-addition
 print(subtract0)print(subtract0)
 
 multiply=a*b*cmultiply=a*b*c
