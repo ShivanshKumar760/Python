@@ -6,24 +6,23 @@ Language: python
 Solution by NeetCode GitHub Pusher
 """
 
-This makes the new piece you are adding to the sum incredibly small—so small This makes the new piece you are adding to the sum incredibly small—so small 
-that it only affects the digits roughly 14 places further down the decimal line.4Why that it only affects the digits roughly 14 places further down the decimal line.4Why 
-the code uses M, L, and XInstead of calculating the full formula from scratch every the code uses M, L, and XInstead of calculating the full formula from scratch every 
-time (which would involve calculating $1000!$ then $1001!$, etc.), time (which would involve calculating $1000!$ then $1001!$, etc.), 
-the code uses incremental updates:L (Linear): Just adds $545,140,134$ each loop.the code uses incremental updates:L (Linear): Just adds $545,140,134$ each loop.
-X (Exponential): Just multiplies by the constant $-262,537,412,640,768,000$ each loop.X (Exponential): Just multiplies by the constant $-262,537,412,640,768,000$ each loop.
-M (Multinomial): Uses a clever ratio (K ** 3 - 16 * K) // i ** 3 to update the M (Multinomial): Uses a clever ratio (K ** 3 - 16 * K) // i ** 3 to update the 
-factorials based on the previous step's result.Summary of WorkflowInitialize: factorials based on the previous step's result.Summary of WorkflowInitialize: 
-Start with the first term of the series ($k=0$).Iterate: Start with the first term of the series ($k=0$).Iterate: 
-Calculate the next "slice" of the sum. Each slice is $10^{14}$ times smaller Calculate the next "slice" of the sum. Each slice is $10^{14}$ times smaller 
-than the last.Summate: Add the slice to the total (S).than the last.Summate: Add the slice to the total (S).
-Finalize: Multiply the accumulated sum by the constant C and flip it Finalize: Multiply the accumulated sum by the constant C and flip it 
-(since the formula calculates $1/\pi$).Would you like to see how this formula changes (since the formula calculates $1/\pi$).Would you like to see how this formula changes 
-if we wanted to calculate a different constant, like $e$ or $\sqrt{2}$?if we wanted to calculate a different constant, like $e$ or $\sqrt{2}$?
-""""""
-def calculate_pi(n):def calculate_pi(n):
-    getcontext().prec = n + 2  # Set precision higher than needed for accuracy    getcontext().prec = n + 2  # Set precision higher than needed for accuracy
-        
-    C = 426880 * Decimal(10005).sqrt()    C = 426880 * Decimal(10005).sqrt()
-    K = 6    K = 6
-    M = 1    M = 1
+from decimal import Decimal, getcontext
+"""
+The Chudnovsky formula is a "Ramanujan-type" series.1 To understand how it works,
+we have to look at it as a machine that balances three different moving parts: 
+a fixed constant, a linearly growing part, and a massively shrinking part.
+The formal identity is:$$\frac{426880\sqrt{10005}}{\pi} = \sum_{k=0}^{\infty} \frac{(6k)! (545140134k + 13591409)}{(3k)! (k!)^3 (-640320)^{3k}}$$1.
+The "Constant" (The Scale)The number 426880 $\sqrt{10005}$ (which is C in your code)
+acts as a scaling factor. 
+The Chudnovsky brothers derived this using complex multiplication of elliptic curves. 
+Specifically, it relates to a very special "imaginary quadratic field" 
+involving the number $d = 163$.Because $e^{\pi\sqrt{163}}$ is an "almost integer" (it's very close to $640320^3 + 744$), 
+this specific formula converges much faster than almost any other series in 
+mathematics.2. The Numerator (The Growth)The numerator consists of two main parts:The 
+Factorials $(6k)! / ((3k)!(k!)^3)$: This part creates huge integers. 
+It represents the "shape" of the curve as it approaches $\pi$.The Linear 
+Term 2$(545140134k + 13591409)$: In your code, this is L. 3As $k$ (the loop index) 
+increases, this term grows steadily. 
+It ensures that each step of the summation "plugs the hole" left by the previous step 
+to reach the exact value of $\pi$.3. 
+The Denominator (The Precision)The denominator is $(-640320)^{3k}$ (represented by X in 
