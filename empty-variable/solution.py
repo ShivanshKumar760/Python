@@ -7,3 +7,4 @@ Solution by NeetCode GitHub Pusher
 """
 
 var=Nonevar=None
+print(type(var))print(type(var))
