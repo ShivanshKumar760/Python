@@ -6,4 +6,4 @@ Language: python
 Solution by NeetCode GitHub Pusher
 """
 
-print("Can someone pls add a closing parenthesis?")print("Can someone pls add a closing parenthesis?")
+print("Can someone pls add a closing parenthesis?")
