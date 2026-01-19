@@ -6,8 +6,9 @@ Language: python
 Solution by NeetCode GitHub Pusher
 """
 
-def greet(name: str) -> None:
-    print("Hello, " + name)
+def greet(name: str) -> str:
+    # print("Hello, " + name)
 
 value= greet("NeetCode")
+    return "Hello, "+name
 print(type(value))
