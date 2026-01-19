@@ -17,3 +17,5 @@ number -= 2
 print(number)
 
 #3. Add number to itself and print the result.
+number += number
+print(number)
