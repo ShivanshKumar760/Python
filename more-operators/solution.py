@@ -17,3 +17,7 @@ print (product // c)
 print (product % c)
 
 #3.The result of raising a to the power of b.
+print (a ** b)
+
+#4. The result of raising b to the power of c.
+print (b ** c)
