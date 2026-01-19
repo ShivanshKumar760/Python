@@ -1,6 +1,6 @@
 # Parameters
 
-**🔗 Problem Link:** [View on NeetCode](https://neetcode.io/problems/python-parameters/question)
+**🔗 Problem Link:** [View on NeetCode](https://neetcode.io/problems/python-multiple-parameters/question)
 
 ---
 
