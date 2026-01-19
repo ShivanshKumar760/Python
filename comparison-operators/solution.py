@@ -6,6 +6,7 @@ Language: python
 Solution by NeetCode GitHub Pusher
 """
 
+# //gnsdnjgj
 def check_equal(x, y) -> bool:
     if(x==y):
         return True
@@ -15,4 +16,3 @@ def check_equal(x, y) -> bool:
 def check_not_equal(x, y) -> bool:
     if(x != y):
         return True
-    else:
