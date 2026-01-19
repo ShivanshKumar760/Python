@@ -1,6 +1,6 @@
 """
 Problem: Parameters
-URL: https://neetcode.io/problems/python-multiple-parameters/question
+URL: https://neetcode.io/problems/python-parameters/question
 Language: python
 
 Solution by NeetCode GitHub Pusher
