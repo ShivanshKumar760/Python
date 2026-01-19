@@ -8,9 +8,8 @@ Solution by NeetCode GitHub Pusher
 
 # def greet(name: str) -> str:
 #     # print("Hello, " + name)
-def greet(name:str)->None:
-value= greet("NeetCode")
 #     return "Hello, "+name
+def greet(name:str)->None:
     print("Hello, "+name)
-    
+value= greet("NeetCode")
 print(type(value))
