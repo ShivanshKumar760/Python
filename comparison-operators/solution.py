@@ -6,15 +6,14 @@ Language: python
 Solution by NeetCode GitHub Pusher
 """
 
-def check_greater_than(x, y) -> bool:
-    if(x>y):
-        return True
-    else:
         return False
+    else:
+        return True
+    if(x != y):
 
-def check_less_than_or_equal(x, y) -> bool:
-    if(x<=y):
-        return True
-    else:
+def check_not_equal(x, y) -> bool:
         return False
-def check_greater_than_or_equal(x, y) -> bool:
+    else:
+        return True
+    if(x==y):
+def check_equal(x, y) -> bool:
