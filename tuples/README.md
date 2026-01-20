@@ -1,0 +1,66 @@
+# Tuples
+
+**🔗 [View on NeetCode](https://neetcode.io/problems/python-tuples/question)**
+
+---
+
+**Tuples** are very similar to lists, but they have one key difference: they are **immutable**. This means that once a tuple is created, it cannot be changed. We can create a tuple by using parentheses instead of square brackets:
+
+```python
+my_tuple = (4, 5, 6)
+
+print(my_tuple)  # Output: (4, 5, 6)
+```
+
+We can index it just like a list:
+
+```python
+my_tuple = (4, 5, 6)
+
+print(my_tuple[0])  # Output: 4
+print(my_tuple[1])  # Output: 5
+print(my_tuple[2])  # Output: 6
+```
+
+We can also use slicing:
+
+```python
+my_tuple = (4, 5, 6)
+
+print(my_tuple[1:])  # Output: (5, 6)
+```
+
+Keep in mind, slicing a tuple doesn't modify it, instead it creates a new tuple with the specified slice.
+
+Since we can't modify a tuple, the following code will raise an error:
+
+```python
+my_tuple = (4, 5, 6)
+
+my_tuple[0] = 1 # Raises an error
+```
+
+We also can't call `append` or `pop` on a tuple, since these functions would modify it. We can however still call `sum()`, `max()`, and `min()` on a tuple, since these functions don't modify the tuple.
+
+It's common to use tuples to store related data.
+
+#### Challenge
+
+Implement a function `create_pair(name: str, age: int) -> Tuple`, which should combine the `name` and `age` parameters into a tuple and return it. The tuple should contain the name as the first element and the age as the second element.
+
+---
+
+## 💡 Solution
+
+Check the `solution.py` file for the implementation.
+
+---
+
+## 📊 Complexity Analysis
+
+- **Time Complexity:** O(?)
+- **Space Complexity:** O(?)
+
+---
+
+*Synced from [NeetCode](https://neetcode.io) • [GitHub Pusher Extension](https://github.com/)*
