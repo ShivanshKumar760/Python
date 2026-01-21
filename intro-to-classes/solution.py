@@ -17,3 +17,4 @@ print(f"My pet is a {my_pet.species} named {my_pet.name}")
     def __init__(self,name:str,species:str)->None:
         self.name=name
         self.species=species
+    #constructor
