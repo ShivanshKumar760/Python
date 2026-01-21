@@ -16,7 +16,7 @@ class Pet:
 whiskers = Pet("Whiskers", "cat", 6, 8)
 
 # TODO: Print Whiskers' initial attributes
-print(f"Intial Attribute: {whiskers.name}({whiskers.species}-Hunger: {whiskers.hunger}, Energy: {whiskers.energy})")
+print(f"Intial Attribute: {whiskers.name}({whiskers.species})-Hunger: {whiskers.hunger}, Energy: {whiskers.energy}")
 
 # TODO: Modify Whiskers' attributes:
 #  - Decrease hunger by 3
