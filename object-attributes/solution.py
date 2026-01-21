@@ -23,3 +23,6 @@ print(f"Intial Attribute: {whiskers.name}({whiskers.species})-Hunger: {whiske
 #  - Increase energy by 2
 
 # TODO: Print Whiskers' modified attributes
+whiskers.hunger-=1
+whiskers.energy+=2
+print(f"Modified Attribute: {whiskers.name}({whiskers.species})-Hunger: {whiskers.hunger}, Energy: {whiskers.energy}")
