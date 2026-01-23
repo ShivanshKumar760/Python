@@ -1,6 +1,6 @@
 """
 Problem: Code
-URL: https://neetcode.io/problems/python-implement-superhero-class/solution
+URL: https://neetcode.io/problems/python-add-superhero-abilities/solution
 Language: python
 
 Solution by NeetCode GitHub Pusher
@@ -17,7 +17,21 @@ class SuperHero:
     """
 
     def __init__(self, name: str, power: str, health: int):
-        # TODO: Initialize the superhero's attributes here
-        self.name=name
-        self.power=power
-        self.health=health
+        self.name = name
+        self.power = power
+        self.health = health
+
+
+    # TODO: Define attack method and implement it
+
+    # TODO: Define heal method and implment it
+
+
+    def attack(self) -> None:
+
+
+        print(f"{self.name} attacks with {self.power}!")
+    def heal(self) -> None:
+        self.health += 10
+        print(f"{self.name} heals 10 points. New health: {self.health}.")
+# TODO: Create superhero instance
