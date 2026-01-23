@@ -1,6 +1,6 @@
 # Code
 
-**🔗 [View on NeetCode](https://neetcode.io/problems/python-implement-superhero-class/solution)**
+**🔗 [View on NeetCode](https://neetcode.io/problems/python-add-superhero-abilities/solution)**
 
 ---
 
