@@ -21,8 +21,3 @@ class Pet:
         print(f"Fluffy's hunger level: {my_pet.hunger}")
 
 # Create a pet
-my_pet = Pet("Fluffy")
-
-# TODO: Feed the pet three 
-for i in range(3):
-    my_pet.feed()
