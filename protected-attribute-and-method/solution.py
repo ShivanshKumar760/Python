@@ -10,7 +10,7 @@ class Account:
     def __init__(self,title,balance):
 
     def display_balance(self) -> None:
-        print(self._balance)
+        print(f"Balance: ${self._balance}")
 
 
 # Do not modify the code below this line
