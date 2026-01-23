@@ -21,3 +21,15 @@ class SuperHero:
         self.name=name
         self.power=power
         self.health=health
+
+
+# TODO: Create Superhero instances
+batman=SuperHero("Batman","Intelligence",100)
+superman=SuperHero("Superman","Strength",150)
+# TODO: Print out the attributes of each superhero
+print(batman.name)
+print(batman.power)
+print(batman.health)
+print(superman.name)
+print(superman.power)
+print(superman.health)
