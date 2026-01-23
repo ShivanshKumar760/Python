@@ -20,5 +20,3 @@ class SuperHero:
 
 # Don't modify the following code
 ironman = SuperHero("Iron Man", "Repulsor Beams", 85)
-
-ironman.power_boost(15)
