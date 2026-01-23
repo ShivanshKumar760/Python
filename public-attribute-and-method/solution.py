@@ -8,7 +8,6 @@ Solution by NeetCode GitHub Pusher
 
 class StoreItem:
     def __init__(self,name,price):
-       # pass  # Add: name, price
 
 
 chips = StoreItem("Chips", 1.99) # Don't modify this line
