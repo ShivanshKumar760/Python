@@ -8,6 +8,10 @@ Solution by NeetCode GitHub Pusher
 
         """Return the sound the pet makes based on its type.
         """
+    def make_sound(self) -> str:
+
+        self.animal_type = animal_type
+        self.name = name
         if self.animal_type == "dog":
             return "Woof!"
         elif self.animal_type == "cat":
@@ -17,8 +21,3 @@ Solution by NeetCode GitHub Pusher
 
 # Don't change the following code
 print(Pet.__doc__)
-print(Pet.__init__.__doc__)
-    def make_sound(self) -> str:
-
-        self.animal_type = animal_type
-print(Pet.make_sound.__doc__)
