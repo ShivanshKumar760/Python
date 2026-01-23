@@ -18,4 +18,6 @@ chips = StoreItem("Chips", 1.99) # Don't modify this line
 
        self.name=name
        self.price=price
-print(f"Item: {chips.name} - Price: ${chips.price}")
+# print(f"Item: {chips.name} - Price: ${chips.price}")
+print(chips.name)
+print(chips.price)
