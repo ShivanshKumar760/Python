@@ -7,7 +7,7 @@ Solution by NeetCode GitHub Pusher
 """
 
 class StoreItem:
-    def __init__(self),name,price):
+    def __init__(self,name,price):
        # pass  # Add: name, price
 
 
