@@ -6,11 +6,6 @@ Language: python
 Solution by NeetCode GitHub Pusher
 """
 
-class SuperHero:
-    """
-    A class to represent a superhero.
-
-    Attributes:
         name (str): The superhero's name
         power (str): The superhero's main superpower
         health (int): The superhero's health points
@@ -35,3 +30,8 @@ class SuperHero:
         self.health += 10
         print(f"{self.name} heals 10 points. New health: {self.health}.")
 # TODO: Create superhero instance
+catwoman = SuperHero("Catwoman", "Agility", 120)
+
+# TODO: Use the attack() and heal() method
+catwoman.attack()
+catwoman.heal()
