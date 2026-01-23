@@ -35,3 +35,8 @@ class SuperHero:
 
 
 # TODO: Create superhero instance
+catwoman = SuperHero("Catwoman", "Agility", 120)
+
+# TODO: Use the attack() and heal() method
+catwoman.attack()
+catwoman.heal()
