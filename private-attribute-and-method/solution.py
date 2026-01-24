@@ -18,7 +18,7 @@ print(my_password.verify_password("secret123"))  # Should print: True
 print(my_password.verify_password("wrong"))      # Should print: False
         self.__password=password  
     def verify_password(self,password):
-        if(pass==self.__password):
+        if(password==self.__password):
             return True
         else:
             return False
