@@ -24,4 +24,6 @@ print(account.get_balance())
 account.set_balance(100)
 print(account.get_balance())
 account.set_balance(0)
-print(account.get_balance())
+    def get_balance(self)->int:
+    # TODO: Add getter method for balance
+            return
