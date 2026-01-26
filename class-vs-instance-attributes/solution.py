@@ -8,14 +8,14 @@ Solution by NeetCode GitHub Pusher
 
 class BankAccount: 
     # TODO: Add class and instance attributes at their appropriate places
-    total_account=0
+    total_accounts=0
     total_balance=0
 
     def __init__(self,name,balance) -> None:
         self.name=name
         self.balance=balance
-        total_account+=1
-        total_balance+=balance
+        BankAccount.total_accounts+=1
+        BankAccount.total_balance+=balance
 
 
 
