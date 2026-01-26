@@ -20,4 +20,4 @@ print(f"100 EUR = {CurrencyConverter.to_usd(100, 'EUR')} USD")     # 
 print(f"100 JPY = {CurrencyConverter.to_usd(100, 'JPY')} USD")     # 1 USD
     @staticmethod
     def to_usd(ammount:int,currency:str):
-        return ammount*rates[currency]
+        return ammount*CurrencyConverter.rates[currency]
