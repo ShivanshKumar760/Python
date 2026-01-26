@@ -6,6 +6,7 @@ Language: python
 Solution by NeetCode GitHub Pusher
 """
 
+class SmartDevice:
     # Add your class attributes here
     total_devices=0
     active_devices=0
@@ -34,5 +35,3 @@ tv.turn_off()
 
 print(f"Total Devices: {SmartDevice.total_devices}")    # Shows 2
 print(f"Active Devices: {SmartDevice.active_devices}")  # Shows 1
-
-class SmartDevice:
