@@ -30,7 +30,6 @@ class Dog(Animal):
 class Cat(Animal):
     def make_sound(self) -> None:
         print(f"{self.name} is meowing")
-=
 
 
 
