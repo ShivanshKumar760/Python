@@ -32,6 +32,7 @@ class Avenger(SuperHero):
         self.team = team
 
     def attack(self) -> None:
+        super().attack()
 
 
 
@@ -41,4 +42,3 @@ print(avenger.name)
 print(avenger.power)
 print(avenger.team)
 avenger.attack()
-        super().attack()
