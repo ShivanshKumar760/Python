@@ -1,6 +1,6 @@
 # Code
 
-**🔗 [View on NeetCode](https://neetcode.io/problems/python-hide-details-using-decorators/solution)**
+**🔗 [View on NeetCode](https://neetcode.io/problems/python-method-overriding/solution)**
 
 ---
 
