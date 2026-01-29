@@ -31,5 +31,5 @@ black_widow = BlackWidow()
 
 battle_sequence(spider_man)
     print(hero.attack())
-    print(hero.defend()
+    print(hero.defend())
 battle_sequence(black_widow)
