@@ -14,7 +14,6 @@ class SpiderMan:
         return "Spider Sense!"
 
 # TODO: Create the BlackWidow class with attack() and defend() methods
-def battle_sequence(hero) -> None:
 class BlackWidow:
     def attack(self) -> str:
         return "Widow's Bite!"
@@ -23,6 +22,9 @@ class BlackWidow:
         return "Acrobatic Dodge!"
 
 # TODO: Create the battle_sequence() function
+def battle_sequence(hero) -> None:
+    print(hero.attack())
+    print(hero.defend())
 
 
 # Don't modify the code below
@@ -30,6 +32,4 @@ spider_man = SpiderMan()
 black_widow = BlackWidow()
 
 battle_sequence(spider_man)
-    print(hero.attack())
-    print(hero.defend())
 battle_sequence(black_widow)
