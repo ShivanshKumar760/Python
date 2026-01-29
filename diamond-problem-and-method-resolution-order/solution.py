@@ -20,11 +20,11 @@ class C(A):
 
 # class D(C, B): 
 #     pass
+class D(B,C):
+    pass
 
 
 # Do not change the code below
 d = D()
-d.print_method()
-class D(B,C):
-    pass
 # print(D.__mro__)
+d.print_method()
