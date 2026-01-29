@@ -27,4 +27,4 @@ d = D()
 d.print_method()
 class D(B,C):
     pass
-print(D.__mro__)
+# print(D.__mro__)
