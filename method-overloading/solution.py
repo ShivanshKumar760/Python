@@ -8,7 +8,7 @@ Solution by NeetCode GitHub Pusher
 
 class TextProcessor:
     # Implement method overloading for format_text method
-    def format_text(txt1,txt2=None):
+    def format_text(self,txt1,txt2=None):
         if (txt2==None):
             return txt1.upper()
         else:
