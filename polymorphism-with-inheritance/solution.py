@@ -15,6 +15,16 @@ class Animal:
 
 
 # TODO: Create the Dog and Cat classes with make_sound method
+class Dog(Animal):
+    def make_sound(self):
+        print(f"{self.name} says: Woof!")
+
+class Cat(Animal):
+    def make_sound(self):
+        print(f"{self.name} says: Meow!")
+
+def make_sound(animal:Animal):
+    animal.make_sound()
 
 
 # TODO: Create a common interface that takes any object of type Animal (or its subclasses) and calls their make_sound method
@@ -29,13 +39,3 @@ animal.make_sound()
 
 animal = Cat("Whiskers")
 animal.make_sound()
-class Dog(Animal):
-    def make_sound(self):
-        print(f"{self.name} says: Woof!")
-
-class Cat(Animal):
-    def make_sound(self):
-        print(f"{self.name} says: Meow!")
-
-def make_sound(animal:Animal):
-    animal.make_sound()
