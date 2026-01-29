@@ -19,7 +19,7 @@ class Hero:
 # TODO: Implement the FlightHero and StrengthHero classes
 class FlightHero(Hero):
     def __init__(self,name:str,power_level:int,health:int,flight_speed:int):
-        super.__init__(name,power_level,health)
+        super().__init__(name,power_level,health)
         self.flight_speed=flight_speed
     def use_power():
         return f"{self.name} flies at {self.flight_speed} mph!"
