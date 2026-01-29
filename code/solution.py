@@ -1,42 +1,23 @@
 """
 Problem: Code
-URL: https://neetcode.io/problems/python-method-overriding/solution
+URL: https://neetcode.io/problems/python-method-overloading/solution
 Language: python
 
 Solution by NeetCode GitHub Pusher
 """
 
-# class Animal:
-#     def __init__(self, name: str):
-#         self.name = name
-
-#     def make_sound(self) -> None:
-#         print("Animal makes a sound")
-
-# # TODO: Create a Dog class and a Cat class that inherit from the `Animal` class.
-# # TODO: Override the `make_sound` method in the `Dog` class to make the dog bark.
-# # TODO: Override the `make_sound` method in the `Cat` class to make the cat meow.
-class Animal:
-    def __init__(self, name: str):
-        self.name = name
-
-    def make_sound(self) -> None:
-        print("Animal makes a sound")
-
-class Dog(Animal):
-    def make_sound(self) -> None:
-        print(f"{self.name} is barking")
-
-class Cat(Animal):
-    def make_sound(self) -> None:
-        print(f"{self.name} is meowing")
+class TextProcessor:
+    # Implement method overloading for format_text method
+    def format_text(self,txt1,txt2=None):
+        if (txt2==None):
+            return txt1.upper()
+        else:
+            return txt1+txt2
 
 
 
-# Do not modify the code below
-animal = Animal("Cow")
-animal.make_sound() # Output: Animal makes a sound
-dog = Dog("Max")
-dog.make_sound() # Output: Max is barking
-cat = Cat("Luna")
-cat.make_sound() # Output: Luna is meowing
+
+# Don't modify the code below
+processor = TextProcessor()
+print(processor.format_text("hello"))
+print(processor.format_text("hello", "world"))
