@@ -7,7 +7,7 @@ Solution by NeetCode GitHub Pusher
 """
 
 def show_attack(hero):
-    print(f"{hero.name} attack with {hero.attack()} damage!")
+    print(f"{hero.name} attacks with {hero.attack()} damage!")
 
 
 # Do not modify the following code
