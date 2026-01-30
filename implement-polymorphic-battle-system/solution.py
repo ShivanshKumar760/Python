@@ -35,3 +35,4 @@ warrior = Warrior("Bob", 20)
 mage = Mage("Alice", 15)
 
 show_attack(warrior)  
+show_attack(mage)    
