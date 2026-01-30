@@ -6,8 +6,6 @@ Language: python
 Solution by NeetCode GitHub Pusher
 """
 
-        self.name = name
-        self.health = 100
         self.power = power
 
     def attack(self) -> int:
@@ -17,4 +15,6 @@ Solution by NeetCode GitHub Pusher
 class Warrior(Hero):
     def attack(self):
         return self.power+10
+        self.health = 100
+        self.name = name
 class Mage(Hero):
