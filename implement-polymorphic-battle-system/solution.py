@@ -6,14 +6,14 @@ Language: python
 Solution by NeetCode GitHub Pusher
 """
 
-        return self.power+10
-class Mage(Hero):
-    def __init__(self,name,power):
-        super().__init__(name,power)
-        self.health-=20
-    def attack(self):
-        return self.power+20
-# TODO: Implement the battle function
 def show_attack(hero):
+    print(f"{hero.name} attack with {hero.attack()} damage")
+# TODO: Implement the battle function
+        return self.power+20
     def attack(self):
-class Warrior(Hero):
+        self.health-=20
+
+
+# Do not modify the following code
+warrior = Warrior("Bob", 20)
+mage = Mage("Alice", 15)
