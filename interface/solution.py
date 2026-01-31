@@ -30,7 +30,7 @@ class WonderWoman(Superhero):
 # Don't modify the code below
 class SuperHero(ABC):
     @abstractmethod
-    def fly(self)-str:
+    def fly(self)->str:
         pass
     def use_power(self)->str:
         pass
