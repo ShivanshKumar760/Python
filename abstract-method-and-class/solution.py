@@ -6,6 +6,7 @@ Language: python
 Solution by NeetCode GitHub Pusher
 """
 
+from abc import ABC, abstractmethod
 
 class PaymentCard(ABC):
     def __init__(self, card_number: str, balance: float):
@@ -13,20 +14,43 @@ class PaymentCard(ABC):
         self.balance = balance
 
     # TODO: Implement the process_payment method
-
-
-# TODO: Implement the DebitCard class
-
-
     @abstractmethod
     def process_payment(self,amount)->str:
         pass
+
+
+# TODO: Implement the DebitCard class
 class DebitCard(PaymentCard):
     def process_payment(self,amount)->str:
         if(self.balance>=amount):
-from abc import ABC, abstractmethod
             self.balance-=amount
             return "Payment successful"
         else:
             return "Insufficient funds"
+
+
 # TODO: Implement the CreditCard class
+class CreditCard(PaymentCard):
+    def process_payment(self,amount)->str:
+        self.balance-=amount
+        return "Payment successful"
+
+
+
+
+
+# Don't modify the code below
+debit_card = DebitCard("1234", 100.0)  # Card with $100 balance
+credit_card = CreditCard("5678", 100.0) # Card with $100 balance
+
+# Test debit card
+print(debit_card.process_payment(50.0))  
+print(debit_card.balance)                
+print(debit_card.process_payment(100.0))  
+print(debit_card.balance)    
+
+# Test credit card
+print(credit_card.process_payment(50.0))   
+print(credit_card.balance)                
+print(credit_card.process_payment(100.0))  
+print(credit_card.balance)    
