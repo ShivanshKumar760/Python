@@ -1,6 +1,6 @@
 # Code
 
-**🔗 [View on NeetCode](https://neetcode.io/problems/python-method-overloading/solution)**
+**🔗 [View on NeetCode](https://neetcode.io/problems/python-implement-area-calculator/solution)**
 
 ---
 
