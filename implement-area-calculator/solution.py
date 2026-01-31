@@ -23,4 +23,4 @@ print(calc.calculate(4, 6))
             return round(math.pi*(l**2))
         elif(width!=None):
 
-            return length*width
+            return int(length)*int(width)
