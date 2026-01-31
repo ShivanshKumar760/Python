@@ -9,6 +9,12 @@ Solution by NeetCode GitHub Pusher
 from abc import ABC, abstractmethod
 
 # TODO: Create a Superhero interface
+class Superhero(ABC):
+    @abstractmethod
+    def fly(self)->str:
+        pass
+    def use_power(self)->str:
+        pass
 
 
 class Superman(Superhero):
@@ -28,10 +34,8 @@ class WonderWoman(Superhero):
 
 
 # Don't modify the code below
-class Superhero(ABC):
-    @abstractmethod
-    def fly(self)->str:
-        pass
-    def use_power(self)->str:
-        pass
 superman = Superman()
+wonder_woman = WonderWoman()
+
+print(isinstance(superman, Superhero)) 
+print(isinstance(wonder_woman, Superhero))
