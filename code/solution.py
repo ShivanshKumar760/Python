@@ -1,23 +1,26 @@
 """
 Problem: Code
-URL: https://neetcode.io/problems/python-method-overloading/solution
+URL: https://neetcode.io/problems/python-implement-area-calculator/solution
 Language: python
 
 Solution by NeetCode GitHub Pusher
 """
 
-class TextProcessor:
-    # Implement method overloading for format_text method
-    def format_text(self,txt1,txt2=None):
-        if (txt2==None):
-            return txt1.upper()
-        else:
-            return txt1+txt2
+import math
+
+class AreaCalc:
+    # TODO: Implement calculate method
+    # pass
 
 
 
+# Don't modify the following code
+calc = AreaCalc()
+print(calc.calculate(5))    
+print(calc.calculate(4, 6))
+    def calculate(self,length:int,width=None):
+        if(width==None):
+            return round(math.pi*(l**2))
+        elif(width!=None):
 
-# Don't modify the code below
-processor = TextProcessor()
-print(processor.format_text("hello"))
-print(processor.format_text("hello", "world"))
+            return int(length)*int(width)
