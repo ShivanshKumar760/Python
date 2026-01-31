@@ -18,7 +18,7 @@ print(hero.fly())  
 print(hero.fly())
 print(hero.fly())  
     def fly(self):
-        if(self._power_level>20):
+        if(self._power_level>=20):
             self._power_level-=20
             return "Up up and away!"
         elif(self._power_level<20):
